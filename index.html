@@ -1,94 +1,73 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <meta charset="utf-8">
 <head>
-<title> calculators </title>
-<link rel="stylesheet" href="style.css">
+    <title> calculators </title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="tabs">
-        <input type="radio" name="tabs" id="tab-first">
-        <label for="tab-first">
-            <p>square</p>
-        </label>
+<div class="tabs">
+    <input type="radio" name="tabs" id="tab-first">
+    <label for="tab-first">
+        <p>square</p>
+    </label>
+    <input type="radio" name="tabs" id="tab-second">
+    <label for="tab-second">
+        <p>rectangle</p>
+    </label>
+    <input type="radio" name="tabs" id="tab-third">
+    <label for="tab-third">
+        <p>circle</p>
+    </label>
+    <input type="radio" name="tabs" id="tab-forth">
+    <label for="tab-forth">
+        <p>triangle</p>
+    </label>
 
-        <input type="radio" name="tabs" id="tab-second">
-        <label for="tab-second">
-            <p>rectangle</p>
-        </label>
-
-        <input type="radio" name="tabs" id="tab-third">
-        <label for="tab-third">
-            <p>circle</p>
-        </label>
-
-        <input type="radio" name="tabs" id="tab-forth">
-        <label for="tab-forth">
-            <p>triangle</p>
-        </label>
-
-
-
-        <div id="tab-content-1" class="tab-content">
-            <section id="box">
-                <p id="text">Введите длину стороны</p>
-                <input id="input"> 
-                <button id="area" onclick="findAreaOfSquare()"> найти площадь  </button>
-                <button id="perimeter" onclick="findPerimeterOfSquare()" > найти периметр </button>
-            </section>
-        </div>
-
-      
-        <div id="tab-content-2" class="tab-content">
-            <section id="box1">
-                <p id="text">Введите длину стороны</p>
-                <input id="input1"> 
-                <p id="text">Введите длину второй стороны</p>
-                <input id="input2"> 
-                <button id="area" onclick="findAreaOfRectangle()"> найти площадь  </button>
-                <button id="perimeter" onclick="findPerimeterOfRectangle()" > найти периметр </button>
-            </section>
-        </div>
-
-
-
-       
-      
-        <div id="tab-content-3" class="tab-content">
-            <section id="box">
-                <p id="text">Введите радиус</p>
-                <input id="input"> 
-                <button id="area" onclick="findAreaOfCircle()"> найти площадь  </button>
-                <button id="perimeter" onclick="findPerimeterOfCircle()" > найти периметр </button>
-            </section>
-        </div>
-
-
-     
-       
-    <div id="tab-content-4" class="tab-content">
-        <section id="box2">
-            <p id="text">Введите длину основания треугольника</p>
-            <input id="input4"> 
-            <p id="text">Введите длину первой стороны</p>
-            <input id="input5"> 
-            <p id="text">Введите длину второй стороны</p>
-            <input id="input6">
-            <p id="text">Введите высоту треугольника</p>
-            <input id="input7">
-            <button id="area" onclick="findAreaOfTriangle()"> найти площадь  </button>
-            <button id="perimeter" onclick="findPerimeterOfTriangle()" > найти периметр </button>
+    <div id="tab-content-1" class="tab-content">
+        <section id="box-square">
+            <p id="text-square">Введите длину стороны</p>
+            <input id="input-square">
+            <button id="area-square" onclick="findAreaOfSquare()"> найти площадь</button>
+            <button id="perimeter-square" onclick="findPerimeterOfSquare()"> найти периметр</button>
         </section>
     </div>
 
-
+    <div id="tab-content-2" class="tab-content">
+        <section id="box-rectangle">
+            <p id="first-side-rectangle">Введите длину стороны</p>
+            <input id="first-side-rectangle-input">
+            <p id="second-side-rectangle">Введите длину второй стороны</p>
+            <input id="second-side-rectangle-input">
+            <button id="area-rectangle" onclick="findAreaOfRectangle()"> найти площадь</button>
+            <button id="perimeter-rectangle" onclick="findPerimeterOfRectangle()"> найти периметр</button>
+        </section>
     </div>
 
+    <div id="tab-content-3" class="tab-content">
+        <section id="box-circle">
+            <p id="text-circle">Введите радиус</p>
+            <input id="input-circle">
+            <button id="area-circle" onclick="findAreaOfCircle()"> найти площадь</button>
+            <button id="perimeter-circle" onclick="findPerimeterOfCircle()"> найти периметр</button>
+        </section>
+    </div>
 
-
-
-    <script src="scripts.js"></script>
+    <div id="tab-content-4" class="tab-content">
+        <section id="box-triangle">
+            <p id="base-triangle">Введите длину основания треугольника</p>
+            <input id="base-triangle-input">
+            <p id="first-side-triangle">Введите длину первой стороны</p>
+            <input id="first-side-triangle-input">
+            <p id="second-side-triangle">Введите длину второй стороны</p>
+            <input id="second-side-triangle-input">
+            <p id="triangle-height">Введите высоту треугольника</p>
+            <input id="triangle-height-input">
+            <button id="area-triangle" onclick="findAreaOfTriangle()"> найти площадь</button>
+            <button id="perimeter-triangle" onclick="findPerimeterOfTriangle()"> найти периметр</button>
+        </section>
+    </div>
+</div>
+<script src="scripts.js"></script>
 </body>
-
 </html>

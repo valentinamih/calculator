@@ -73,8 +73,6 @@ body {
 #tab-second:checked ~ #tab-content-2,
 #tab-third:checked ~ #tab-content-3,
 #tab-forth:checked ~ #tab-content-4
-
-
 {
     display: block;
 }
@@ -90,23 +88,10 @@ body {
     }
 }
 
-
-h2 {
-    display: block;
-    margin-top: 200px;
-    text-align: center;
-}
-
-#triangleH2 {
-    display: block;
-    margin-top: 150px;
-    text-align: center;
-}
-
 .tab-content {
     background-color: lavender;
     border-style: ridge;
-    height: 300px;
+    min-height: 300px;
     width: 100%;
     margin: auto;
     position: sticky;
@@ -121,25 +106,27 @@ h2 {
     margin-top: 70px;
     background-color: gainsboro;
 }
-
-#text {
+#box-triangle {
+    margin-top: 0px
+}
+section p{
     margin: 5px;
     text-align: center;
 } 
 
-#area, #perimeter {
+section button {
 width: 140px;
 margin-left: 5px;
 margin-top: 5px;
 }
 
-#input, #input1, #input2, #input3, #input4, #input5, #input6, #input7 {
+input {
     width: 200px;
     margin: auto;
     display: block;
 }
 
-#box1 {
+section {
     width: 300px;
     border-style: ridge;
     position: absolute;
@@ -147,23 +134,4 @@ margin-top: 5px;
     margin-left: -150px;
     margin-top: 35px;
     background-color: gainsboro;
-}
-
-#box2 {
-    width: 300px;
-    border-style: ridge;
-    position: absolute;
-    left: 50%;
-    margin-left: -150px;
-    margin-top:0;
-    background-color: gainsboro;
-}
-
-#mainbox2 {
-    background-color: lavender;
-    border-style: ridge;
-    height: 300px;
-    width: 400px;
-    margin: auto;
-    position: sticky;
 }
