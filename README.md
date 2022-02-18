@@ -1,2 +1,2 @@
 # calculator
-https://valentinamih.github.io/rsschool-cv/
+https://valentinamih.github.io/calculator/
