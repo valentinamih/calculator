@@ -7,64 +7,80 @@
 </head>
 <body>
 <div class="tabs">
-    <input type="radio" name="tabs" id="tab-first">
-    <label for="tab-first">
-        <p>square</p>
+    <input type="radio" name="tabs" id="tabs__square-tab" class="tabs__input">
+    <label for="tabs__square-tab" class="tabs__tabs-label">
+        <p class="tabs__figure-name">square</p>
     </label>
-    <input type="radio" name="tabs" id="tab-second">
-    <label for="tab-second">
-        <p>rectangle</p>
+    <input type="radio" name="tabs" id="tabs__rectangle-tab" class="tabs__input">
+    <label for="tabs__rectangle-tab" class="tabs__tabs-label">
+        <p class="tabs__figure-name">rectangle</p>
     </label>
-    <input type="radio" name="tabs" id="tab-third">
-    <label for="tab-third">
-        <p>circle</p>
+    <input type="radio" name="tabs" id="tabs__circle-tab" class="tabs__input">
+    <label for="tabs__circle-tab" class="tabs__tabs-label">
+        <p class="tabs__figure-name">circle</p>
     </label>
-    <input type="radio" name="tabs" id="tab-forth">
-    <label for="tab-forth">
-        <p>triangle</p>
+    <input type="radio" name="tabs" id="tabs__triangle-tab" class="tabs__input">
+    <label for="tabs__triangle-tab" class="tabs__tabs-label">
+        <p class="tabs__figure-name">triangle</p>
     </label>
 
-    <div id="tab-content-1" class="tab-content">
-        <section id="box-square">
-            <p id="text-square">Введите длину стороны</p>
-            <input id="input-square">
-            <button id="area-square" onclick="findAreaOfSquare()"> найти площадь</button>
-            <button id="perimeter-square" onclick="findPerimeterOfSquare()"> найти периметр</button>
+    <div id="tab-content-square" class="tab-content">
+        <section class="tab-content__box">
+            <div>
+                <label for="tab-content__square-input" class="tab-content__label">Enter the length of the side</label><br>
+                <input id="tab-content__square-input">
+            </div>
+            <button onclick="findAreaOfSquare()">find area</button>
+            <button onclick="findPerimeterOfSquare()">find perimeter</button>
         </section>
     </div>
 
-    <div id="tab-content-2" class="tab-content">
-        <section id="box-rectangle">
-            <p id="first-side-rectangle">Введите длину стороны</p>
-            <input id="first-side-rectangle-input">
-            <p id="second-side-rectangle">Введите длину второй стороны</p>
-            <input id="second-side-rectangle-input">
-            <button id="area-rectangle" onclick="findAreaOfRectangle()"> найти площадь</button>
-            <button id="perimeter-rectangle" onclick="findPerimeterOfRectangle()"> найти периметр</button>
+    <div id="tab-content-rectangle" class="tab-content">
+        <section class="tab-content__box">
+            <div>
+                <label for="tab-content__side1-rectangle-input" class="tab-content__label">Enter the length of the first side</label>
+                <input id="tab-content__side1-rectangle-input" />
+            </div>
+           <div>
+            <label for="tab-content__side2-rectangle-input" class="tab-content__label">Enter the length of the second side</label><br>
+            <input id="tab-content__side2-rectangle-input" />
+           </div>
+            <button onclick="findAreaOfRectangle()">find area</button>
+            <button onclick="findPerimeterOfRectangle()">find perimeter</button>
         </section>
     </div>
 
-    <div id="tab-content-3" class="tab-content">
-        <section id="box-circle">
-            <p id="text-circle">Введите радиус</p>
-            <input id="input-circle">
-            <button id="area-circle" onclick="findAreaOfCircle()"> найти площадь</button>
-            <button id="perimeter-circle" onclick="findPerimeterOfCircle()"> найти периметр</button>
+    <div id="tab-content-circle" class="tab-content">
+        <section class="tab-content__box">
+            <div>
+                <label for="tab-content__circle-input">Enter radius</label> <br>
+                <input id="tab-content__circle-input">
+            </div>
+            <button onclick="findAreaOfCircle()">find area</button>
+            <button onclick="findPerimeterOfCircle()">find perimeter</button>
         </section>
     </div>
 
-    <div id="tab-content-4" class="tab-content">
-        <section id="box-triangle">
-            <p id="base-triangle">Введите длину основания треугольника</p>
-            <input id="base-triangle-input">
-            <p id="first-side-triangle">Введите длину первой стороны</p>
-            <input id="first-side-triangle-input">
-            <p id="second-side-triangle">Введите длину второй стороны</p>
-            <input id="second-side-triangle-input">
-            <p id="triangle-height">Введите высоту треугольника</p>
-            <input id="triangle-height-input">
-            <button id="area-triangle" onclick="findAreaOfTriangle()"> найти площадь</button>
-            <button id="perimeter-triangle" onclick="findPerimeterOfTriangle()"> найти периметр</button>
+    <div id="tab-content-triangle" class="tab-content">
+        <section class="tab-content__box">
+            <div>
+                <label for="tab-content__triangle-base-input">Enter the base of the triangle</label><br>
+                <input id="tab-content__triangle-base-input">
+            </div>
+            <div>
+                <label for="tab-content__triangle-side1-input">Enter the length of the first side</label><br>
+                <input id="tab-content__triangle-side1-input">
+            </div>
+            <div>
+                <label for="tab-content__triangle-side2-input">Enter the length of the second side</label><br>
+                <input id="tab-content__triangle-side2-input">
+            </div>
+            <div>
+                <label for="tab-content__triangle-height-input">Enter the height of the triangle</label>
+                <input id="tab-content__triangle-height-input">
+            </div>
+            <button onclick="findAreaOfTriangle()">find area</button>
+            <button onclick="findPerimeterOfTriangle()">find perimeter</button>
         </section>
     </div>
 </div>
